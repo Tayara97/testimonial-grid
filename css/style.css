@@ -34,6 +34,10 @@ h3 {
   margin: 20px 0;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
 .testimonials {
   display: grid;
   gap: 30px;
@@ -42,7 +46,7 @@ h3 {
 
 @media screen and (min-width: 992px) {
   .testimonials {
-    margin: 100px;
+    margin: 80px 0;
     grid-template-columns: 250px 300px 300px 250px;
     grid-template-rows: 300px 300px;
     grid-template-areas:
