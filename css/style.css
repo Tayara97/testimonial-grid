@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --violet: hsl(263, 55%, 52%);
+  --dark-grayish-blue: hsl(217, 19%, 35%);
+  --dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+  --Weight-one: 500;
+  --Weight-two: 600;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background-color: var(--Light-gray);
+  font-size: 13px;
+  min-height: 100vh;
+  font-family: Barlow Semi Condensed;
+}
+h2 {
+  font-size: 15px;
+}
+h3 {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.testimonials {
+  display: grid;
+  gap: 30px;
+  margin: 80px 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .testimonials {
+    margin: 100px;
+    grid-template-columns: 250px 300px 300px 250px;
+    grid-template-rows: 300px 300px;
+    grid-template-areas:
+      "da da jon ki"
+      "je pa pa ki";
+  }
+  .testimonials .card.Daniel {
+    grid-area: da;
+  }
+  .testimonials .card.Jonathan {
+    grid-area: jon;
+  }
+  .testimonials .card.Kira {
+    grid-area: ki;
+  }
+  .testimonials .card.card.Jeanette {
+    grid-area: je;
+  }
+  .testimonials .card.Patrick {
+    grid-area: pa;
+  }
+}
+.testimonials .card {
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.testimonials .card .title {
+  display: flex;
+  align-items: center;
+}
+.testimonials .card .title img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.testimonials .card blockquote {
+  opacity: 70%;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.testimonials .card.Daniel {
+  background-color: var(--violet);
+  position: relative;
+}
+.card.Daniel .title .info h2,
+.card.Daniel .title .info p,
+.testimonials .Daniel blockquote {
+  color: var(--Light-gray);
+}
+.card.Daniel .title .info p {
+  opacity: 50%;
+}
+.testimonials .Daniel h3 {
+  position: relative;
+  z-index: 1;
+
+  color: var(--Light-grayish-blue);
+}
+
+.testimonials .card.Daniel .quote-icon {
+  position: absolute;
+  top: 0;
+  right: 45px;
+}
+.testimonials .card.Jonathan {
+  background-color: var(--dark-grayish-blue);
+}
+.card.Jonathan .title .info h2,
+.card.Jonathan .title .info p,
+.card.Jonathan blockquote {
+  color: var(--Light-gray);
+}
+.card.Jonathan h3 {
+  color: var(--Light-grayish-blue);
+}
+.card.Jonathan .title .info p {
+  opacity: 50%;
+}
+
+.card.Jeanette {
+  background-color: var(--White);
+}
+.card.Jeanette .title .info h2,
+.card.Jeanette .title .info p,
+.card.Jeanette blockquote,
+.card.Jeanette h3 {
+  color: var(--dark-blackish-blue);
+}
+.card.Jeanette p {
+  opacity: 50%;
+}
+.card.Patrick {
+  background-color: var(--dark-blackish-blue);
+}
+.card.Patrick .title .info h2,
+.card.Patrick .title .info p,
+.card.Patrick blockquote {
+  color: var(--Light-gray);
+}
+.card.Patrick .title .info p {
+  opacity: 50%;
+}
+.card.Patrick h3 {
+  color: var(--Light-grayish-blue);
+}
+
+.card.Kira {
+  background-color: var(--White);
+}
+.card.Kira .title .info h2,
+.card.Kira .title .info p,
+.card.Kira blockquote {
+  color: var(--dark-blackish-blue);
+}
+.card.Kira h3 {
+  color: var(--dark-grayish-blue);
+}
+.card.Kira .title .info p {
+  opacity: 50%;
+}
